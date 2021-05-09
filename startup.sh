@@ -22,8 +22,8 @@ echo "Installing Brew"
 # Run macOS preferences dotfile
 echo "Installing Cask Packages"
 # Execute script relative to this script's directory
-# https://stackoverflow.com/questions/6659689/referring-to-a-file-relative-to-executing-script
-source "${BASH_SOURCE%/*}/macos.sh"
+https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
+source "$(dirname "${BASH_SOURCE[0]}")/macos.sh"
 
 
 ####################################################
@@ -32,20 +32,22 @@ source "${BASH_SOURCE%/*}/macos.sh"
 
 # Brew
 echo "Installing Brew Packages"
-source "${BASH_SOURCE%/*}/brew.sh"
+source "$(dirname "${BASH_SOURCE[0]}")/brew.sh"
+
 
 # Cask
 echo "Installing Cask Packages"
-source "${BASH_SOURCE%/*}/cask.sh"
+source "$(dirname "${BASH_SOURCE[0]}")/cask.sh"
+
 
 # MAS
 echo "Install Mac Store Apps"
-source "${BASH_SOURCE%/*}/mas.sh"
+source "$(dirname "${BASH_SOURCE[0]}")/mas.sh"
+
 
 # Python pip
 echo "Install Python pip packages"
-source "${BASH_SOURCE%/*}/pip.sh"
-
+source "$(dirname "${BASH_SOURCE[0]}")/pip.sh"
 
 ####################################################
 # Config Git
