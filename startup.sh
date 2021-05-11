@@ -20,7 +20,7 @@ echo "Installing Brew"
 ####################################################
 
 # Run macOS preferences dotfile
-echo "Installing Cask Packages"
+echo "Installing macOS Preferences"
 # Execute script relative to this script's directory
 https://stackoverflow.com/questions/4774054/reliable-way-for-a-bash-script-to-get-the-full-path-to-itself
 source "$(dirname "${BASH_SOURCE[0]}")/macos.sh"
