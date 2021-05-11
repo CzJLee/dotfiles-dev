@@ -1,7 +1,8 @@
 # Dotfiles for a Developer Environment
 
 ```
-git clone https://github.com/czjlee/dotfiles-dev
-cd dotfiles-dev
+curl -LO https://github.com/czjlee/dotfiles-dev/archive/master.zip
+unzip -q master.zip
+cd dotfiles-dev-master
 sh startup.sh
 ```
