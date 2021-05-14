@@ -8,7 +8,7 @@
 # Apps with licenses
 brew install --cask 1password #Need online version and activation key in order to work
 brew install --cask coderunner #online version has more capabilities 
-# brew install --cask bartender # Bartender 3 does not work on big sur
+brew install --cask bartender # This should install bartender 4 on Big Sur
 brew install --cask daisydisk
 brew install --cask tg-pro
 
